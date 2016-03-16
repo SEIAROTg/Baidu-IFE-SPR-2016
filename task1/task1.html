@@ -100,35 +100,35 @@
 	</table>
 	<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
 	<h3>侧栏注册窗口标题</h3>
-	<form>
-		<label for="emailaddress">请输入邮箱地址：</label>
-		<input type="email" id="emailaddress" placeholder="input your emailaddress here">
+	<form action="/" method="POST">
+		<label for="email">请输入邮箱地址：</label>
+		<input type="email" name="email" id="email" placeholder="这是一个文本输入框">
 		<p>邮箱地址请按要求格式输入</p>
 		<label for="password1">请输入密码：</label>
-		<input type="password" id="password1" placeholder="input your password here">
+		<input type="password" name="password1" id="password1" placeholder="这是一个文本输入框">
 		<label for="password2">请重复输入密码：</label>
-		<input type="password" id="password2" placeholder="input your password again here">
+		<input type="password" name="password2" id="password2" placeholder="这是一个文本输入框">
 		<p>密码为6-16位英文数字</p>
-		<label>性别:&nbsp;</label>
-		<input type="radio" name="gender" id="male" >
+		<label>性别：</label>
+		<input type="radio" name="gender" id="male" value="male">
 		<label for="male">男</label>
-		<input type="radio" name="gender" id="female" >
+		<input type="radio" name="gender" id="female" value="female">
 		<label for="female">女</label>
-		<label>城市：</label>
-		<select>
-			<option value="北京" selected="selected">北京</option>
+		<label for="city">城市：</label>
+		<select name="city" id="city">
+			<option value="北京" selected>北京</option>
 			<option value="杭州">杭州</option>
 			<option value="宁波">宁波</option>
 		</select>
 		<label>爱好：</label>
-		<input type="checkbox" name="hobby" id="sports">
+		<input type="checkbox" name="hobby" id="sports" value="sports">
 		<label for="sports">运动</label>
-		<input type="checkbox" name="hobby" id="art">
+		<input type="checkbox" name="hobby" id="art" value="art">
 		<label for="art">艺术</label>
-		<input type="checkbox" name="hobby" id="science">
+		<input type="checkbox" name="hobby" id="science" value="science">
 		<label for="science">科学</label>
-		<label>个人描述：</label>
-		<textarea cols="20" rows="2" placeholder="input your individual description "></textarea>
+		<label for="profile">个人描述：</label>
+		<textarea name="profile" id="profile" cols="20" rows="2" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
 		<input type="submit" value="确认提交">
 	</form>
 	<p>版权所有&copy;</p>
